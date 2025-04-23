@@ -1,4 +1,7 @@
+#![allow(unexpected_cfgs)]
 use anchor_lang::prelude::*;
+pub mod instructions;
+pub mod states;
 
 declare_id!("2tD2D3Ld2nt4CCjQNfDB8S5N2iJBjyj3FWD4cMCVaidF");
 
@@ -11,6 +14,3 @@ pub mod amm {
         Ok(())
     }
 }
-
-#[derive(Accounts)]
-pub struct Initialize {}
